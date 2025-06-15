@@ -23,12 +23,12 @@ export function Contact() {
           Whether you have a question or just want to say hi, I'll try my best to get back to you!
         </p>
         <Button size="lg" asChild className="mb-12">
-          <a href="mailto:hello@johndoe.com">Say Hello</a>
+          <a href="mailto:sanjayyamjala3@gmail.com">Say Hello</a>
         </Button>
         <div className="flex justify-center space-x-6">
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Github size={32}/></a>
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={32}/></a>
-          <a href="mailto:hello@johndoe.com" className="text-muted-foreground hover:text-primary transition-colors"><Mail size={32}/></a>
+          <a href="https://github.com/sanjaykumar-git" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github size={32}/></a>
+          <a href="https://linkedin.com/in/sanjay-yamjala" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={32}/></a>
+          <a href="mailto:sanjayyamjala3@gmail.com" className="text-muted-foreground hover:text-primary transition-colors"><Mail size={32}/></a>
         </div>
       </div>
     </section>

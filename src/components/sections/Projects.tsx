@@ -1,4 +1,3 @@
-
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -8,27 +7,19 @@ import { cn } from "@/lib/utils";
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "A full-featured e-commerce site with product listings, a shopping cart, and a checkout process.",
-    image: `https://images.unsplash.com/photo-1556740738-b6a63e2775d2?w=600`,
-    tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Real-time Chat App",
-    description: "A web application enabling users to chat in real-time in different rooms, built with WebSockets.",
+    title: "MERN Stack Chat App",
+    description: "A feature-rich real-time chat application using the MERN stack and Socket.io, enabling users to register, connect, and have private one-on-one conversations.",
     image: `https://images.unsplash.com/photo-1553678324-f84674bd7b24?w=600`,
-    tags: ["React", "Socket.IO", "Express", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "#",
+    tags: ["React.js", "Node.js", "Socket.io", "MongoDB", "Tailwind CSS"],
+    liveUrl: "https://mernstack-chat-app-1.onrender.com/",
+    githubUrl: "https://github.com/sanjaykumar-git/mernstack-chat-app",
   },
   {
-    title: "Data Visualization Dashboard",
-    description: "An interactive dashboard for visualizing complex datasets with various chart types and filters.",
-    image: `https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600`,
-    tags: ["React", "D3.js", "TypeScript", "Tailwind CSS"],
-    liveUrl: "#",
+    title: "Pain Compass Journal",
+    description: "A healthcare-focused application for journaling and tracking health-related data, built with Lovable and featuring a secure authentication flow.",
+    image: `https://images.unsplash.com/photo-1526289034009-0240b386ce33?w=600`,
+    tags: ["React", "TypeScript", "Tailwind CSS", "Lovable.dev"],
+    liveUrl: "https://pain-compass-journal.lovable.app/auth",
     githubUrl: "#",
   }
 ];
