@@ -3,6 +3,8 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { cn } from "@/lib/utils";
 
 const projects = [
   {
@@ -32,8 +34,17 @@ const projects = [
 ];
 
 export function Projects() {
+  const { ref, inView } = useScrollAnimation<HTMLElement>();
+
   return (
-    <section id="projects" className="py-24 bg-card">
+    <section 
+      id="projects" 
+      ref={ref}
+      className={cn(
+        "py-24 bg-card opacity-0",
+        inView && "animate-fade-in-up"
+      )}
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-display font-bold text-center mb-12">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

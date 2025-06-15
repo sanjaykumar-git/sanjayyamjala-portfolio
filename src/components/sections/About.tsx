@@ -1,9 +1,20 @@
 
 import { Card } from "@/components/ui/card";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { cn } from "@/lib/utils";
 
 export function About() {
+  const { ref, inView } = useScrollAnimation<HTMLElement>();
+
   return (
-    <section id="about" className="py-24 bg-card">
+    <section 
+      id="about" 
+      ref={ref}
+      className={cn(
+        "py-24 bg-card opacity-0",
+        inView && "animate-fade-in-up"
+      )}
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-display font-bold text-center mb-12">About Me</h2>
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">

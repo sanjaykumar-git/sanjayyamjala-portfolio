@@ -1,6 +1,8 @@
 
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Code, Database, Server, Smartphone, Brush } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { cn } from "@/lib/utils";
 
 const skillsData = [
   { icon: Code, title: "Frontend", skills: ["React", "TypeScript", "Tailwind CSS", "HTML5 & CSS3"] },
@@ -10,8 +12,17 @@ const skillsData = [
 ];
 
 export function Skills() {
+  const { ref, inView } = useScrollAnimation<HTMLElement>();
+
   return (
-    <section id="skills" className="py-24">
+    <section 
+      id="skills" 
+      ref={ref}
+      className={cn(
+        "py-24 opacity-0",
+        inView && "animate-fade-in-up"
+      )}
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-display font-bold text-center mb-12">My Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -1,10 +1,21 @@
 
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { cn } from "@/lib/utils";
 
 export function Contact() {
+  const { ref, inView } = useScrollAnimation<HTMLElement>();
+
   return (
-    <section id="contact" className="py-24">
+    <section 
+      id="contact" 
+      ref={ref}
+      className={cn(
+        "py-24 opacity-0",
+        inView && "animate-fade-in-up"
+      )}
+    >
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-display font-bold mb-4">Get In Touch</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
