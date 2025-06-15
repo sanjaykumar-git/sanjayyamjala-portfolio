@@ -16,7 +16,7 @@ const AnimatedBackground = () => {
             '--size': `${Math.random() * 3 + 1}px`,
             '--duration': `${Math.random() * 10 + 10}s`,
             '--delay': `-${Math.random() * 10}s`,
-          }}
+          } as React.CSSProperties}
         ></div>
       ))}
     </div>
