@@ -39,30 +39,32 @@ export function Projects() {
     >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-display font-bold text-center mb-12">My Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center -m-4">
           {projects.map((project, index) => (
-            <Card key={index} className="flex flex-col overflow-hidden hover:shadow-primary/20 hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="p-0">
-                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-              </CardHeader>
-              <CardContent className="p-6 flex-grow">
-                <CardTitle className="font-display text-2xl mb-2">{project.title}</CardTitle>
-                <CardDescription className="text-muted-foreground mb-4">{project.description}</CardDescription>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
-                </div>
-              </CardContent>
-              <CardFooter className="p-6 pt-0">
-                <div className="flex w-full justify-between items-center">
-                    <Button asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
-                    </Button>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                      <Github />
-                    </a>
-                </div>
-              </CardFooter>
-            </Card>
+            <div key={index} className="p-4 w-full md:w-1/2 lg:w-1/3">
+              <Card className="flex flex-col h-full overflow-hidden hover:shadow-primary/20 hover:shadow-lg transition-shadow duration-300">
+                <CardHeader className="p-0">
+                  <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                </CardHeader>
+                <CardContent className="p-6 flex-grow">
+                  <CardTitle className="font-display text-2xl mb-2">{project.title}</CardTitle>
+                  <CardDescription className="text-muted-foreground mb-4">{project.description}</CardDescription>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
+                  </div>
+                </CardContent>
+                <CardFooter className="p-6 pt-0">
+                  <div className="flex w-full justify-between items-center">
+                      <Button asChild>
+                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                      </Button>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                        <Github />
+                      </a>
+                  </div>
+                </CardFooter>
+              </Card>
+            </div>
           ))}
         </div>
       </div>
