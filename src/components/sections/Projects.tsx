@@ -10,7 +10,7 @@ const projects = [
   {
     title: "MERN Stack Chat App",
     description: "A feature-rich real-time chat application using the MERN stack and Socket.io, enabling users to register, connect, and have private one-on-one conversations.",
-    image: `https://images.unsplash.com/photo-1611605698335-8b1569810432?w=600`,
+    image: `https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600`,
     tags: ["React.js", "Node.js", "Socket.io", "MongoDB", "Tailwind CSS"],
     liveUrl: "https://mernstack-chat-app-1.onrender.com/",
     githubUrl: "https://github.com/sanjaykumar-git/mernstack-chat-app",
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Pain Compass Journal",
     description: "A healthcare-focused web application to help users track, manage, and reflect on their pain experiences, featuring secure authentication and data journaling.",
-    image: `https://images.unsplash.com/photo-1576091160550-2173dba9996a?w=600`,
+    image: `https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=600`,
     tags: ["React.js", "Tailwind CSS", "Supabase", "Lovable.dev"],
     liveUrl: "https://pain-compass-journal.lovable.app/auth",
     githubUrl: "#",
