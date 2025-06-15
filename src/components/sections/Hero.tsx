@@ -39,7 +39,12 @@ export function Hero() {
             <a href="#projects">View My Work</a>
           </Button>
           <Button size="lg" variant="secondary" asChild>
-            <a href="https://qkxviwzykdfdcgqydymz.supabase.co/storage/v1/object/public/resumes/Sanjay_Kumar_Resume.pdf" download="Sanjay_Kumar_Resume.pdf">Download Resume</a>
+            <a
+              href="https://qkxviwzykdfdcgqydymz.supabase.co/storage/v1/object/public/resumes/SanjayYamjala_Resume.pdf"
+              download="SanjayYamjala_Resume.pdf"
+            >
+              Download Resume
+            </a>
           </Button>
         </div>
         <div className="flex justify-center space-x-6 animate-fade-in-up" style={{ animationDelay: '1s' }}>
