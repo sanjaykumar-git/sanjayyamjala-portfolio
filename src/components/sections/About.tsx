@@ -21,19 +21,19 @@ export function About() {
           <div className="w-full md:w-1/3 flex justify-center">
             <img 
               src={`https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop`}
-              alt="John Doe" 
+              alt="Yamjala Sanjay Kumar" 
               className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-primary"
             />
           </div>
           <div className="w-full md:w-2/3 text-lg text-muted-foreground space-y-4 text-center md:text-left">
             <p>
-              Hello! I'm John, a developer with a passion for creating clean, efficient, and user-friendly applications. My journey into web development started years ago, and I've been hooked ever since.
+              Hello! I'm Sanjay, a passionate full-stack developer. My journey into web development has been driven by a desire to solve real-world problems and build meaningful applications.
             </p>
             <p>
-              I thrive on solving complex problems and learning new technologies. When I'm not coding, you can find me exploring the great outdoors, reading sci-fi novels, or experimenting with new recipes in the kitchen.
+              I have hands-on experience building MERN stack applications and I thrive on the challenge of learning and implementing new technologies, especially in web and cloud environments.
             </p>
             <p>
-              I'm always open to new opportunities and collaborations. Feel free to reach out!
+              I am currently looking for new opportunities in web and software development. Feel free to reach out!
             </p>
           </div>
         </div>

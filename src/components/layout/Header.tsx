@@ -24,7 +24,7 @@ export function Header() {
   return (
     <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-sm border-b' : 'bg-transparent'}`}>
       <div className="container mx-auto flex h-16 items-center justify-between">
-        <a href="#" className="text-2xl font-bold font-display text-primary">JD</a>
+        <a href="#" className="text-2xl font-bold font-display text-primary">YSK</a>
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="text-muted-foreground hover:text-foreground transition-colors">
