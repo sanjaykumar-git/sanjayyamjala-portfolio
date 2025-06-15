@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin } from "lucide-react";
@@ -34,9 +33,6 @@ export function Hero() {
         </h1>
         <p className="text-xl md:text-2xl text-primary-foreground/80 mb-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           Full-Stack Developer looking for Web and Software Development roles.
-        </p>
-        <p className="max-w-3xl mx-auto text-primary-foreground/70 mb-12 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          I’m a passionate full-stack developer with hands-on experience building MERN stack apps. I enjoy solving real-world problems and constantly explore new technologies in web and cloud.
         </p>
         <div className="flex justify-center items-center space-x-4 mb-16 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
           <Button size="lg" asChild>
