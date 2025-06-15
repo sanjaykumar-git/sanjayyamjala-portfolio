@@ -1,5 +1,4 @@
 
-import { Card } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { cn } from "@/lib/utils";
 
@@ -20,7 +19,7 @@ export function About() {
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/3 flex justify-center">
             <img 
-              src={`https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop`}
+              src={`/lovable-uploads/e5a6c7a2-7194-4632-b5b4-990d64de2fde.png`}
               alt="Yamjala Sanjay Kumar" 
               className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-primary"
             />
