@@ -8,7 +8,7 @@ const projects = [
   {
     title: "E-commerce Platform",
     description: "A full-featured e-commerce site with product listings, a shopping cart, and a checkout process.",
-    image: `https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600`,
+    image: `https://images.unsplash.com/photo-1556740738-b6a63e2775d2?w=600`,
     tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
     liveUrl: "#",
     githubUrl: "#",
@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Real-time Chat App",
     description: "A web application enabling users to chat in real-time in different rooms, built with WebSockets.",
-    image: `https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600`,
+    image: `https://images.unsplash.com/photo-1553678324-f84674bd7b24?w=600`,
     tags: ["React", "Socket.IO", "Express", "MongoDB"],
     liveUrl: "#",
     githubUrl: "#",
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "Data Visualization Dashboard",
     description: "An interactive dashboard for visualizing complex datasets with various chart types and filters.",
-    image: `https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600`,
+    image: `https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600`,
     tags: ["React", "D3.js", "TypeScript", "Tailwind CSS"],
     liveUrl: "#",
     githubUrl: "#",
