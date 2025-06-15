@@ -3,9 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { cn } from "@/lib/utils";
+import { toast } from "sonner";
 
 export function Contact() {
   const { ref, inView } = useScrollAnimation<HTMLElement>();
+  const email = "sanjayyamjala3@gmail.com";
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(email);
+    toast.success("Email copied to clipboard!");
+  };
 
   return (
     <section 
@@ -28,7 +35,9 @@ export function Contact() {
         <div className="flex justify-center space-x-6">
           <a href="https://github.com/sanjaykumar-git" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github size={32}/></a>
           <a href="https://linkedin.com/in/sanjay-yamjala" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={32}/></a>
-          <a href="mailto:sanjayyamjala3@gmail.com" className="text-muted-foreground hover:text-primary transition-colors"><Mail size={32}/></a>
+          <button onClick={handleCopyEmail} className="text-muted-foreground hover:text-primary transition-colors" aria-label="Copy email address">
+            <Mail size={32}/>
+          </button>
         </div>
       </div>
     </section>
