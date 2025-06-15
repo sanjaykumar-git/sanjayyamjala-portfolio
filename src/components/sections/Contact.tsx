@@ -4,6 +4,15 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { ContactForm } from "./ContactForm";
 
 export function Contact() {
   const { ref, inView } = useScrollAnimation<HTMLElement>();
@@ -29,9 +38,20 @@ export function Contact() {
           I'm currently looking for new opportunities and my inbox is always open.
           Whether you have a question or just want to say hi, I'll try my best to get back to you!
         </p>
-        <Button size="lg" asChild className="mb-12">
-          <a href="mailto:sanjayyamjala3@gmail.com">Say Hello</a>
-        </Button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button size="lg" className="mb-12">Say Hello</Button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[425px]">
+            <DialogHeader>
+              <DialogTitle>Send me a message</DialogTitle>
+              <DialogDescription>
+                I'll get back to you as soon as possible.
+              </DialogDescription>
+            </DialogHeader>
+            <ContactForm />
+          </DialogContent>
+        </Dialog>
         <div className="flex justify-center space-x-6">
           <a href="https://github.com/sanjaykumar-git" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Github size={32}/></a>
           <a href="https://linkedin.com/in/sanjay-yamjala" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Linkedin size={32}/></a>
