@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin } from "lucide-react";
@@ -40,7 +39,7 @@ export function Hero() {
             <a href="#projects">View My Work</a>
           </Button>
           <Button size="lg" variant="secondary" asChild>
-            <a href="/lovable-uploads/e5a6c7a2-7194-4632-b5b4-990d64de2fde.png" download="Sanjay_Kumar_Resume.png">Download Resume</a>
+            <a href="https://qkxviwzykdfdcgqydymz.supabase.co/storage/v1/object/public/resumes/Sanjay_Kumar_Resume.pdf" download="Sanjay_Kumar_Resume.pdf">Download Resume</a>
           </Button>
         </div>
         <div className="flex justify-center space-x-6 animate-fade-in-up" style={{ animationDelay: '1s' }}>
