@@ -41,7 +41,8 @@ export function Hero() {
           <Button size="lg" variant="secondary" asChild>
             <a
               href="https://qkxviwzykdfdcgqydymz.supabase.co/storage/v1/object/public/resumes/SanjayYamjala_Resume.pdf"
-              download="SanjayYamjala_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Download Resume
             </a>
