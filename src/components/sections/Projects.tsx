@@ -1,3 +1,4 @@
+
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -16,9 +17,9 @@ const projects = [
   },
   {
     title: "Pain Compass Journal",
-    description: "A healthcare-focused application for journaling and tracking health-related data, built with Lovable and featuring a secure authentication flow.",
+    description: "A healthcare-focused web application to help users track, manage, and reflect on their pain experiences, featuring secure authentication and data journaling.",
     image: `https://images.unsplash.com/photo-1526289034009-0240b386ce33?w=600`,
-    tags: ["React", "TypeScript", "Tailwind CSS", "Lovable.dev"],
+    tags: ["React.js", "Tailwind CSS", "Supabase", "Lovable.dev"],
     liveUrl: "https://pain-compass-journal.lovable.app/auth",
     githubUrl: "#",
   }
